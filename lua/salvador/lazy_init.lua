@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    spec = "salvador.lazy",
-    change_detection = { notify = false }
+	spec = "salvador.lazy",
+	"nvim-lua/plenary.nvim",
+	change_detection = { notify = false }
 })
